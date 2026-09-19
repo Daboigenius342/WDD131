@@ -7,71 +7,11 @@
     <meta name="description" content="This is a prove project showing how to format html and css for my prove assignment about the BYU-I mission statement">
     <link rel="stylesheet" href="style.css">
      <title>Mission Statement</title>
-<style>
-@media( max-width: 600px) {
-    .page {padding : 1.5rem 1.25rem;}
-}
 
-    h1 {
-         font-family:'Times New Roman', Times, Serif;
-        text-transform: uppercase;
-        letter-spacing: 0.15em;
-        text-align: center;
-        padding-top: -10px;
-        padding-bottom: -10px;
-        margin-top: 100.44px;
-
-    }
- 
-     h4 {
-        font-family:'Times New Roman', Times, Serif;
-        text-transform: uppercase;
-        text-align: center;
-        color: #07437c;
-        font-size: 1rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.25em;
-        
-    }
-.rule {
-    border:none;
-    border-top: 1px solid deepskyblue;
-    margin: 0.75rem auto;
-    width: 60%
-}
-
-.tagline {
-    font-style: italic;
-}
-body {
-    background-color:  #e8e8e8;
-    margin: 0; 
-    padding: 2rem 1rem;
-}
-p {
-    font-family:'Times New Roman', Times, Serif;
-    /* text-align: center; */
-    font-size: 1rem;
-    margin-left: 2rem;
-    margin-right: 2 rem;
-    line-height: 1.8;
-}
-.page {
-    background-color: #fff;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 3 rem 4 rem;
-    box-shadow: 0 2px 12px rgba(0,0,0, 0.1);
-    min-height: 100vh;
-}
-
-
-</style>
 </head>
 <body>
 <div class="page">
-    <h1> MISSION STATEMENT </h1>
+    <h1 > MISSION STATEMENT </h1>
 
 <header>
         <h4 > Brigham Young University IDAHO </h4> 
@@ -79,8 +19,9 @@ p {
 <hr class="rule">
     <p> Brigham Young University-Idaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints. Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.
     </p>
-
-    <ol>
+<a class="tagline"> The university does this by </a>
+<ol>
+    <div class="list">
     <li>
         Building testimonies of the restored gospel of Jesus Christ and fostering its principles in a wholesome academic, cultural, and social environment. 
     </li>
@@ -92,9 +33,18 @@ p {
     </li>
     <li> 
         Delivering education that is affordable for students and the Church.
-    </li> 
+    </li>  
+    </div>
 </ol>
 
+
+<footer>
+<img src="logobyui.png" alt="logo" class="logo">
+</footer>
 </div>
+
+
+
+
 </body>
 </html>
