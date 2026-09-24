@@ -12,7 +12,7 @@ selectElem.addEventListener("change", () => {
     
 }
     if (selectElem.value ==="html") {
-        document.body.style.fontstyle = "";
+        document.body.style.fontStyle = "";
         document.body.style.fontWeight = "bold";
         document.body.style.color = "yellow";
          document.body.style.fontFamily = "";
