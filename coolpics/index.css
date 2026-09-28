@@ -1,0 +1,9 @@
+@media screen and (minn-width: 700px) {
+
+    /* color:(var(); */
+    .path{
+    text-decoration: none;
+    margin: auto 1.25rem;
+    font-size: 0.9;
+    }
+}
