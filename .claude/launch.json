@@ -1,1 +1,0 @@
-{"version":"0.0.1","configurations":[{"name":"coolpics","runtimeExecutable":"python3","runtimeArgs":["-m","http.server","5531","--directory","/Users/noahapplehans/WDD131/WDD131/coolpics"],"port":5531}]}
