@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css"> 
-    
+    <script rel="script" src="script.js" defer></script>
 </head>
 <body>
 
 <header>
-  <h1>Responsive Design 📖 Scriptures</h1>
-  <button class="menu-btn">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
+  <h1>cool pics</h1>
+  <button class="menu-btn" aria-label="Toggle navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+    Menu
   </button>
-  <nav>
+  <nav id="primary-navigation">
     <a href="#">Home</a>
     <a href="#">Scriptures</a>
     <a href="#">Favorites</a>
@@ -25,33 +23,55 @@
 </header>
 <main>
  
-  <section>
-     <img src="glassfloat.jpg" alt="glassfloat">
-  </section>
-  <section>
-     <img src="portview.jpg" alt="portlandia">
-  </section>
-   <section>
-     <img src="goonies.jpg" alt="goonies">
-  </section>
-   <section>
-     <img src="seattle.jpg" alt="seattle">
-  </section>
-   <section>
-     <img src="neskobeach.jpg" alt="neskowin">
-  </section>
-   <section>
-     <img src="sand.jpg" alt="sand">
-  </section>
-   <section>
-     <img src="portland.jpg" alt="portland">
-  </section>
-   <section>
-    <img src="pink.jpg" alt="pink">
-  </section>
-   <section>
-    <img src="red.jpg" alt="red">
-    </section>
+<secion class="gallery">
+    
+      <figure>
+        <img src="images/glassfloat-sm.jpg" alt="glassfloat" tabindex="0">
+      </figure>
+
+      <figure>
+        <img src="images/portview-sm.jpg" alt="portlandia" tabindex="0">
+      </figure>    
+  
+     <figure>
+      <img src="images/goonies-sm.jpg" alt="goonies" tabindex="0">
+    </figure>
+  
+  
+     <figure>
+      <img src="images/seattle-sm.jpg" alt="seattle" tabindex="0">
+    </figure>
+  
+  
+     <figure>
+      <img src="images/neskobeach-sm.jpg" alt="neskowin" tabindex="0">
+    </figure>
+  
+  
+     <figure>
+      <img src="images/sand-sm.jpg" alt="sand" tabindex="0">
+    </figure>
+  
+  
+     <figure>
+      <img src="images/portland-sm.jpg" alt="portland" tabindex="0">
+    </figure>
+  
+  
+    <figure>
+      <img src="images/pink-sm.jpg" alt="pink" tabindex="0">
+    </figure>
+  
+  
+    <figure>
+      <img src="images/red-sm.jpg" alt="red" tabindex="0">
+    </figure>
+</secion> 
+    <dialog>
+    <img>
+    <button class="close-viewer" aria-label="Close image viewer">X</button>
+    </dialog>
+          
 </main>
 <footer>Noah Applehans</footer>
 

@@ -13,11 +13,23 @@ footer {
   padding: 1rem;
   background-color: lightblue;
 }
-img {
-  display: block;
-  width: 100%;
+.gallery {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+figure img {
+  width: 250px;
   height: 250px;
+  padding: 0px; /* these are the borders by the way*/
+  background-color: white;
+  box-shadow: 5px 5px 15px black;
   object-fit: cover;
+  display: block;
+   margin: 0 auto;
+
 }
 main {
   display: grid;
@@ -29,19 +41,55 @@ section {
   background-color: white;
   border: 1px solid #ccc;
 }
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
+nav{ 
+    text-align: center;
+}
 nav a {
     padding: 20px;
     color: black;
     display: none;
+}
+nav.open a {
+    display: block;
+    padding: 0.75 rem;
 }
 nav a:hover {
     text-decoration: none;
     color: #616061;
 }
 .menu-btn {
+    font-size: 1.5rem;
+    text-decoration: underline; 
+    font-weight: bold;
     cursor: pointer;
     border: none;
     background-color: transparent;
+    display: block;
+    margin: 0 auto;
+}
+.menu-btn:focus-visible,
+nav a:focus-visible,
+img:focus-visible,
+.close-viewer:focus-visible {
+    outline: 3px solid #1d4ed8;
+    outline-offset: 3px;
 }
 .bar1, .bar2, .bar3 {
     width: 30px;
@@ -53,29 +101,37 @@ footer {
     text-align: center;
 }
 
-/*Tablet*/
-@media(min-width: 600px) {
-   nav {
-    display: flex;
-    justify-content: right;
-   }
-    nav a{
-        display: inline;
-    
-        
-    }
-    .menu-btn {
-        display: none;
-    }
-    main {
+
+ @media screen and (min-width: 700px) {
+    .gallery {
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
+     nav a {
+         display: inline;
+     }
+     nav { text-align: center; }
+     .menu-btn {
+         display:none;
+     }
 }
-
-/*Desktop*/
-@media(min-width: 1000px){
-    main {
+@media screen and (min-width: 1000px) {
+    .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
+    dialog img {
+        width: 60%;
+        margin: 15vh auto;
+    }
+    .close-viewer {
+        position: absolute;
+        right: 15vh;
+    }
+    .viewer {
+        margin: 50px;
+        padding: 50px;
+    }
+    .viewer img {
+        max-width: 800px;
+    }
 }
