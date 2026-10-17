@@ -45,9 +45,16 @@ nav ul {
 
 .projectimg li {
     list-style:none;
-  
-
-   
-
 }
 
+@media (min-width: 600px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.5rem;
+  }
+
+  .container ul {
+    align-items: flex-end;
+  }
+}
