@@ -103,20 +103,16 @@ let section = document.querySelector("section");
         // Code for going through each movie and creating content for that movie
     
 
-      let article = `
+      let html = "";
 
-      <article=class"movie'>
-      <h1>${movie.title}</h1>
-      <p>${movie.date}</p>
-      <p>${movie.description}</p>
-      <img src=${movie.imgSrc} alt=${movie.imgAlt}>
-      <p>${movie.imgAlt}</p>
-      <p>${movie.ages}</p>
-      <p>${movie.genre}></p>
-      <p> ${movie.stars}></p>
-      </article>
-      `;
-      section.innerHTML += article;
+students.forEach(student => {
+    html += `
+        <div>
+            <p>${student.first} ${student.last}</p>
+        </div>`;
+});
+
+    document.querySelector("#student-list").innerHTML = html;
 
     });
 
