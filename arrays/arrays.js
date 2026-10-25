@@ -96,25 +96,7 @@ const movies = [
       }
     ];
 
-    
-let section = document.querySelector("section");
-    movies.forEach(movie => {
 
-        // Code for going through each movie and creating content for that movie
-    
-
-      let html = "";
-
-students.forEach(student => {
-    html += `
-        <div>
-            <p>${student.first} ${student.last}</p>
-        </div>`;
-});
-
-    document.querySelector("#student-list").innerHTML = html;
-
-    });
 
 
   
