@@ -17,8 +17,8 @@ input, select, button {
   padding: 0.5rem;
   font-size: 1rem;
 }
-#codeDiv { display: grid; gap: 0.5rem; }
-#codeDiv[hidden] { display: none; }
+#codediv { display: grid; gap: 0.5rem; }
+#codediv[hidden] { display: none; }
 button {
   margin-top: 0.5rem;
   background: #006eb6;
