@@ -1,0 +1,96 @@
+body {
+  font-family: "Palatino Linotype", sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+}
+
+.card {
+  background: #313131;
+  border: 4px solid #ff8c42;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.9);
+  width: 400px;
+  max-width: 100%;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+
+.name {
+  font-family: "Cinzel", "Palatino Linotype", serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin: 0 0 20px 0;
+  color: #ffb347;
+  text-shadow: 0 0 10px rgba(255, 120, 40, 0.45);
+  padding: 15px 0 15px 35px;
+  background-color: #3a2218;
+}
+
+.stats {
+  margin: 10px 15px 7px 35px;
+  text-align: left;
+}
+
+.stats p {
+  margin: 5px 0;
+  font-family: "Exo 2", "Palatino Linotype", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #ffd4a3;
+}
+
+.stats strong {
+  color: #ff8c42;
+  font-weight: 700;
+}
+
+.buttons {
+  text-align: center;
+}
+
+button {
+  font-family: "Exo 2", "Palatino Linotype", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 8px 12px;
+  margin: 20px;
+  border: 2px solid #ff8c42;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #5a2a16 0%, #2a1610 100%);
+  color: #ffb347;
+  text-shadow: 0 0 6px rgba(255, 120, 40, 0.35);
+  cursor: pointer;
+  transition: background 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+}
+
+button:hover {
+  background: linear-gradient(180deg, #c45a1a 0%, #7a3010 100%);
+  color: #fff3d6;
+  box-shadow: 0 0 12px rgba(255, 120, 40, 0.45);
+}
+
+button:disabled {
+  background: #4a3a34;
+  border-color: #7a6a62;
+  color: #b0a098;
+  text-shadow: none;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.message {
+  color: #ff8a80;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 15px;
+  min-height: 1.2em;
+}
