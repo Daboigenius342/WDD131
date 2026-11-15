@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
+  color: #111;
+}
+
+.site-title {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.search {
+  display: flex;
+  border: 2px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  min-width: 0;
+}
+
+.search button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-left: 2px solid #333;
+  background: white;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1rem 0;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tags li {
+  border: 1px solid #555;
+  background: #eee;
+  border-radius: 3px;
+  padding: 0.2rem 0.4rem;
+}
+
+.recipe-title {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #1a6fb0;
+  margin: 1rem 0 0.25rem;
+}
+
+.description {
+  display: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.social {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.attribution a {
+  color: #0645ad;
+}
+
+@media (min-width: 700px) {
+  .search input {
+    font-size: 1.25rem;
+  }
+
+  .recipe {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .recipe-image {
+    flex: 0 0 45%;
+  }
+
+  .recipe-info {
+    flex: 1;
+  }
+
+  .description {
+    display: block;
+  }
+
+  footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
