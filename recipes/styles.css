@@ -87,6 +87,7 @@ hr {
 
 .tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   list-style: none;
   padding: 0;
@@ -100,6 +101,12 @@ hr {
   padding: 0.2rem 0.4rem;
 }
 
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .recipe-title {
   font-family: "Amatic SC", cursive;
   font-weight: 700;
@@ -110,6 +117,10 @@ hr {
 
 .description {
   display: none;
+}
+
+.no-results {
+  margin: 1rem 0;
 }
 
 footer {
